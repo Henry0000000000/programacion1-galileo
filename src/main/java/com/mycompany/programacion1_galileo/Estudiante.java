@@ -68,6 +68,14 @@ public class Estudiante {
         this.becado = becado;
     }
     
+    public void aplicarBeca(){
+        becado = true;
+    }
+    
+    public void retirarBeca(){
+        becado = false;
+    }
+    
     public static int getContadorEstudiantes() {
         return contadorEstudiantes;
     }
