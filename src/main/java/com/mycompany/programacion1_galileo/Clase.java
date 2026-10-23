@@ -30,7 +30,7 @@ public class Clase {
         
     }
     
-    public Clase(String codigoClase, LocalTime horaInicio, String horaFinal, String asignatura){
+    public Clase(String codigoClase, LocalTime horaInicio, int duracion, String dia, String asignatura){
         setCodigoClase(codigoClase);
         setHoraInicio(horaInicio);
         setDuracion(duracion);
