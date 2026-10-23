@@ -43,7 +43,30 @@ public class Pago {
     public void setMetodoPago(String metodoPago) {
         this.metodoPago = metodoPago;
     }
-    
+
+    public int getCodigoPago() {
+        return codigoPago;
+    }
+
+    public double getPagoTotal() {
+        return pagoTotal;
+    }
+
+    public String getFechaPago() {
+        return fechaPago;
+    }
+
+    public double getMonto() {
+        return monto;
+    }
+
+    public String getMetodoPago() {
+        return metodoPago;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
 
     public void registrarPago() {
         System.out.println("Pago registrado correctamente.");
