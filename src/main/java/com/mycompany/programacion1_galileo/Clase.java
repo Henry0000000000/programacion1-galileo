@@ -2,7 +2,7 @@ package com.mycompany.programacion1_galileo;
 import java.time.LocalTime;
 public class Clase {
     private String codigoClase;
-    private LocalTime horaInicio = LocalTime.of(14, 30, 15);
+    private LocalTime horaInicio;
     private int duracion;
     private String dia;
     private String Asignatura;
