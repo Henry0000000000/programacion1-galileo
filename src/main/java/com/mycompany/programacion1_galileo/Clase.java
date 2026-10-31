@@ -6,6 +6,8 @@ public class Clase {
     private int duracion;
     private String dia;
     private String Asignatura;
+    private Docente docenteAsignado;
+    private Aula aula;
     
     public Clase(){
         codigoClase = "Sin codigo.";
@@ -112,11 +114,22 @@ public class Clase {
         mostrarInfo();
     }
     
+    public void asignarDocente(Docente docenteAsignado) {
+        this.docenteAsignado = docenteAsignado;
+    }
+    
+    public void asignarAula(Aula aula) {
+        this.aula = aula;
+        aula.ocuparAula();
+    }
+    
     public void mostrarInfo() {
         System.out.println("Codigo de la clase: " + getCodigoClase());
         System.out.println("Hora de inicio: " + getHoraInicio());
         System.out.println("Duracion: " + getDuracion());
         System.out.println("Dia de la clase: " + getDia());
         System.out.println("Asignatura: " + getAsignatura());
+        System.out.println("Docente: " + docenteAsignado.getNombreCompleto());
+        System.out.println("Aula: " + aula.getCodigoAula());
     }
 }

@@ -7,6 +7,7 @@ public class Pago {
     private double monto;
     private String metodoPago;
     private String estado;
+    private Estudiante alumno;
     
     public Pago(int codigoPago, double pagoTotal, String fechaPago, double monto, String metodoPago) {
         setCodigoPago(codigoPago);
@@ -15,6 +16,7 @@ public class Pago {
         setFechaPago(fechaPago);
         setMetodoPago(metodoPago);
         this.estado = "Pendiente";
+        this.alumno = alumno;
     }
 
     public void setCodigoPago(int codigoPago) {
@@ -83,6 +85,7 @@ public class Pago {
         System.out.println("Monto: S/ " + monto);
         System.out.println("Método: " + metodoPago);
         System.out.println("Estado: " + estado);
+        System.out.println("Alumno: " + alumno.getNombreCompleto());
     }
     
     public void confirmarPago() {
