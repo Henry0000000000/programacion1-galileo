@@ -9,7 +9,7 @@ public class Pago {
     private String estado;
     private Estudiante alumno;
     
-    public Pago(int codigoPago, double pagoTotal, String fechaPago, double monto, String metodoPago) {
+    public Pago(int codigoPago, double pagoTotal, String fechaPago, double monto, String metodoPago, Estudiante alumno) {
         setCodigoPago(codigoPago);
         setMonto(monto);
         setPagoTotal(pagoTotal);
